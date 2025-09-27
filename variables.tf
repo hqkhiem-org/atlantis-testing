@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "secret_name" {
   description = "Name of the Secrets Manager secret"
   type        = string
-  default     = "test-atlantis-secret"
+  default     = "demo-atlantis-secret"
 }
 
 variable "secret_description" {
@@ -42,4 +42,5 @@ variable "tags" {
     Project     = "atlantis-test"
     ManagedBy   = "terraform"
   }
+
 }
