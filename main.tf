@@ -5,7 +5,7 @@ provider "aws" {
 
 # Create a random password for the secret
 resource "random_password" "secret_password" {
-  length  = 23
+  length  = 24
   special = true
 }
 
@@ -50,5 +50,6 @@ resource "aws_iam_policy" "secrets_manager_policy" {
   tags = var.tags
 
 }
+
 
 
