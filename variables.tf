@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "secret_name" {
   description = "Name of the Secrets Manager secret"
   type        = string
-  default     = "demo-atlantis-secret"
+  default     = "sme-demo"
 }
 
 variable "secret_description" {
@@ -44,3 +44,4 @@ variable "tags" {
   }
 
 }
+
