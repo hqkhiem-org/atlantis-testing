@@ -1,0 +1,12 @@
+version: 3
+automerge: false
+delete_source_branch_on_merge: true
+abort_on_execution_order_fail: true
+projects:
+  - name: prd-sm
+    branch: /main/
+    dir: .
+    workspace: default
+    autoplan:
+      when_modified: ["*.tf"]
+      enabled: false

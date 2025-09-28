@@ -4,8 +4,9 @@ terraform {
     key            = "terraform-state/test-3.tfstate"
     region         = "ap-southeast-1"
     encrypt        = true
-    dynamodb_table = "699561668660-terraform-state"
+    use_lockfile   = true
   }
 
 }
+
 
